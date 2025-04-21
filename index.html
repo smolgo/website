@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="sen">
+  <meta name="keywords" content="sen, website, personal, blog, portfolio">
+  <meta property="og:title" content="sen">
+  <meta property="og:description" content="this is my personal website.">
+  <meta property="og:image" content="https://sen.wtf/img/favico.png">
+  <meta property="og:url" content="https://sen.wtf">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="/img/favico.png" type="image/png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #bfbfbf;
+      font-family: monospace;
+      font-size: 1rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ascii {
+      color: #ff3366;
+      text-shadow: 0 0 5px #ff3366;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    .ascii pre {
+      white-space: pre;
+      margin: 0;
+    }
+
+    a {
+      color: #89f;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #aaf;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      border: 1px solid #444;
+      padding: 1rem;
+      background: #111;
+      height: 100%;
+    }
+
+    h1 {
+      color: #ff3366;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      margin: 0.5rem;
+    }
+
+    .subpage-link {
+      display: block;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    .subpage-link::before {
+      content: "> ";
+      color: #ff3366;
+    }
+
+    @media (max-width: 768px) {
+      .ascii {
+        font-size: 0.6rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 0.5rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .ascii pre {
+        font-size: 2vw;
+      }
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+  </style>
+  <script>
+    const titles = [
+      "/home/smolgo/info.html",
+      "take me back to 2017",
+      "sen.wtf",
+      "hello, moto",
+      "smolgo",
+      "404: thoughts not found",
+      "void main()",
+      "int0x80",
+      "cat ~/secrets/ssh_keys.txt",
+      "kutzooi...",
+      "why does this work?",
+      "tata, ik ben een kat",
+      "fatass teto"
+    ];
+    document.title = titles[Math.floor(Math.random() * titles.length)];
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="ascii">
+      <pre>
+ ██████▄ ███▄ ▄███▓ ▒█████    ██▓      ▄████  ▒█████  
+▒██    ▒ ▓██▒▀█▀ ██▒▒██▒  ██▒▓██▒     ██▒ ▀█▒▒██▒  ██▒
+▒▀██▒██▄ ▓██    ▓██░▒██░  ██▒▒██░    ▒██░▄▄▄░▒██░  ██▒
+      █▒ ▒██    ▒██ ▒██   ██░▒██░    ░▓█  ██▓▒██   ██░
+░██████▒ ▒██▒   ░██▒░ ████▓▒░░██████▒░▒▓███▀▒░ ████▓▒░
+░ ▒░▓  ░ ░ ▒░   ░  ░░ ▒░▒░▒░ ░ ▒░▓  ░ ░▒   ▒ ░ ▒░▒░▒░ 
+░ ░ ▒  ░ ░  ░      ░  ░ ▒ ▒░ ░ ░ ▒  ░  ░   ░   ░ ▒ ▒░ 
+  ░ ░    ░      ░   ░ ░ ░ ▒    ░ ░   ░ ░   ░ ░ ░ ░ ▒  
+    ░  ░        ░       ░ ░      ░  ░      ░     ░ ░  
+</pre>
+    </div>
+    <div class="grid">
+      <section>
+        <h1>about</h1>
+        <p>hi, i'm sen. dutch retard running on monster white.</p>
+        <p>hobbyist dev with focus on reverse-engineering, network protocols, and game modding.</p>
+        <p>particularly interested in dll injection and malware development.</p>
+        <p>my cat lemon is my supervisor, ask me about her!</p>
+        <p>specializes in keyboard walking and cable management (¬‿¬)</p>
+        <p>here are my <a href="https://discord.com/users/374589381752913930">Discord</a>, <a
+            href="https://steamcommunity.com/id/smolgo">Steam</a>, and <a href="https://github.com/smolgo">GitHub</a>
+        </p>
+        <p>> <i>more to be added here...</i></p>
+      </section>
+    </div>
+
+    <div class="grid">
+      <section>
+        <h1>things i use:</h1>
+        OS: Windows Enterprise<br>
+        IDE: Visual Studio 2019<br>
+        Editor: VS Code<br>
+        Languages: C++, Python, Assembly<br>
+        Hardware: 9700X/7800XT<br>
+      </section>
+
+      <section>
+        <h1>frens</h1>
+        > <a href="https://thisiselias.github.io">elias</a><br>
+        > <a href="https://github.com/GetAGripGal/">lara</a><br>
+        > <a href="https://github.com/rxyyy">rx</a><br>
+        > <a href="https://jackdotjs.github.io">jack</a><br>
+        > <a href="https://twitch.tv/bloodladycella">cella</a><br>
+        > you? :3
+      </section>
+
+      <section>
+        <h1>influences</h1>
+        > <a href="https://tmpout.sh" target="_blank">tmpout.sh</a><br>
+        > <a href="https://nfsco.club/">my fren rx</a><br>
+        > <a href="https://github.com/torvalds">linus torvalds</a><br>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
